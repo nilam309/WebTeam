@@ -1630,6 +1630,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Entity.cs" />
+    <Compile Include="Logics\BAL.cs" />
+    <Compile Include="Logics\DAL.cs" />
     <Compile Include="MasterPages\layoutadmin.Master.cs">
       <DependentUpon>layoutadmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
