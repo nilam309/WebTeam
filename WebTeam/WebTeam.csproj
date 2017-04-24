@@ -63,6 +63,7 @@
     <Content Include="Module\Account\register.aspx" />
     <Content Include="Module\Gallery\listphotos.aspx" />
     <Content Include="Module\Project\bugs.aspx" />
+    <Content Include="Module\Project\listproject.aspx" />
     <Content Include="Module\Project\tasklist.aspx" />
     <Content Include="Module\Report\dashboard.aspx" />
     <Content Include="Module\User\profile.aspx" />
@@ -1670,6 +1671,13 @@
     </Compile>
     <Compile Include="Module\Project\bugs.aspx.designer.cs">
       <DependentUpon>bugs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Project\listproject.aspx.cs">
+      <DependentUpon>listproject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\Project\listproject.aspx.designer.cs">
+      <DependentUpon>listproject.aspx</DependentUpon>
     </Compile>
     <Compile Include="Module\Project\tasklist.aspx.cs">
       <DependentUpon>tasklist.aspx</DependentUpon>
