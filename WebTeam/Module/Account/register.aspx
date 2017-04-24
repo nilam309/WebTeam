@@ -72,32 +72,38 @@
                                     <div class="card-title text-xs-center">
                                         <img src="robust-assets/images/logo/robust-logo-dark.png" alt="branding logo">
                                     </div>
-                                    <h6 class="card-subtitle line-on-side text-muted text-xs-center font-small-3 pt-2"><span>Easily Using</span></h6>
+                                    <%--<h6 class="card-subtitle line-on-side text-muted text-xs-center font-small-3 pt-2"><span>Easily Using</span></h6>--%>
                                 </div>
                                 <div class="card-body collapse in">
-                                    <div class="text-xs-center">
+                                    <%--<div class="text-xs-center">
                                         <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-facebook"><span class="icon-facebook3"></span></a>
                                         <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-twitter"><span class="icon-twitter3"></span></a>
                                         <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-linkedin"><span class="icon-linkedin3 font-medium-4"></span></a>
                                         <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-github"><span class="icon-github font-medium-4"></span></a>
-                                    </div>
-                                    <p class="card-subtitle line-on-side text-muted text-xs-center font-small-3 mx-2 my-1"><span>OR Using Email</span></p>
+                                    </div>--%>
+                                    <%--<p class="card-subtitle line-on-side text-muted text-xs-center font-small-3 mx-2 my-1"><span>OR Using Email</span></p>--%>
                                     <div class="card-block">
-                                        <div class="form-horizontal" >
+                                        <div class="form-horizontal">
                                             <fieldset class="form-group has-feedback has-icon-left">
-                                                <input type="text" class="form-control" id="user-name" placeholder="User Name">
+                                                <asp:TextBox ID="txtEmpcode" runat="server" CssClass="form-control" placeholder="Employee Code"></asp:TextBox>
                                                 <div class="form-control-position">
                                                     <i class="icon-head"></i>
                                                 </div>
                                             </fieldset>
                                             <fieldset class="form-group has-feedback has-icon-left">
-                                                <input type="email" class="form-control" id="user-email" placeholder="Your Email Address" required>
+                                                <asp:TextBox ID="txtFullName" runat="server" CssClass="form-control" placeholder="Full Name"></asp:TextBox>
+                                                <div class="form-control-position">
+                                                    <i class="icon-head"></i>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="form-group has-feedback has-icon-left">
+                                                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Your Email Address"></asp:TextBox>
                                                 <div class="form-control-position">
                                                     <i class="icon-mail6"></i>
                                                 </div>
                                             </fieldset>
                                             <fieldset class="form-group has-feedback has-icon-left">
-                                                <input type="password" class="form-control" id="user-password" placeholder="Enter Password" required>
+                                                <asp:TextBox ID="txtPwd" runat="server" CssClass="form-control" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
                                                 <div class="form-control-position">
                                                     <i class="icon-key3"></i>
                                                 </div>
@@ -105,18 +111,18 @@
                                             <fieldset class="form-group row">
                                                 <div class="col-md-6 col-xs-12 text-xs-center">
                                                     <fieldset>
-                                                        <input type="checkbox" id="remember-me" class="chk-remember">
+                                                        <asp:CheckBox ID="chkRemember" runat="server" CssClass="chk-remember" />
                                                         <label for="remember-me">Remember Me</label>
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-md-6 col-xs-12 float-sm-left text-xs-center"><a href="recover.aspx" class="card-link">Forgot Password?</a></div>
                                             </fieldset>
-                                            <button type="submit" class="btn btn-outline-primary btn-block"><i class="icon-head"></i>Register</button>
+                                            <asp:LinkButton ID="lnkRegister" runat="server" CssClass="btn btn-outline-primary btn-block"><i class="icon-head"></i>&nbsp;Register</asp:LinkButton>
                                         </div>
                                     </div>
                                     <p class="card-subtitle line-on-side text-muted text-xs-center font-small-3 mx-2 my-1"><span>Already have an account ?</span></p>
                                     <div class="card-block">
-                                        <a href="login.aspx" class="btn btn-outline-primary btn-block"><i class="icon-unlock2"></i>Login</a>
+                                        <a href="login.aspx" class="btn btn-outline-primary btn-block"><i class="icon-unlock2"></i>&nbsp;Login</a>
                                     </div>
                                 </div>
                             </div>
