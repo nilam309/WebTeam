@@ -117,7 +117,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-xs-12 float-sm-left text-xs-center"><a href="recover.aspx" class="card-link">Forgot Password?</a></div>
                                             </fieldset>
-                                            <asp:LinkButton ID="lnkRegister" runat="server" CssClass="btn btn-outline-primary btn-block"><i class="icon-head"></i>&nbsp;Register</asp:LinkButton>
+                                            <asp:LinkButton ID="lnkRegister" runat="server" CssClass="btn btn-outline-primary btn-block" OnClick="lnkRegister_Click"><i class="icon-head"></i>&nbsp;Register</asp:LinkButton>
                                         </div>
                                     </div>
                                     <p class="card-subtitle line-on-side text-muted text-xs-center font-small-3 mx-2 my-1"><span>Already have an account ?</span></p>

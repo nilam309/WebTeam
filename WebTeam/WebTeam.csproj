@@ -66,6 +66,8 @@
     <Content Include="Module\Project\listproject.aspx" />
     <Content Include="Module\Project\tasklist.aspx" />
     <Content Include="Module\Report\dashboard.aspx" />
+    <Content Include="Module\User\leavplan.aspx" />
+    <Content Include="Module\User\listuser.aspx" />
     <Content Include="Module\User\profile.aspx" />
     <Content Include="robust-assets\css\app.min.css" />
     <Content Include="robust-assets\css\components\buttons\ladda-themeless.min.css" />
@@ -1630,7 +1632,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Entity.cs" />
+    <Compile Include="App_Code\Entity.cs" />
     <Compile Include="Logics\BAL.cs" />
     <Compile Include="Logics\DAL.cs" />
     <Compile Include="MasterPages\layoutadmin.Master.cs">
@@ -1695,6 +1697,20 @@
     </Compile>
     <Compile Include="Module\Report\dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\leavplan.aspx.cs">
+      <DependentUpon>leavplan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\leavplan.aspx.designer.cs">
+      <DependentUpon>leavplan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\User\listuser.aspx.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\User\listuser.aspx.designer.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Module\User\profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>

@@ -26,9 +26,9 @@ namespace WebTeam.App_Code
         public string Email { get { return this._Email; } set { this._Email = value; } }
         public string Pwd { get { return this._Pwd; } set { this._Pwd = value; } }
         public DateTime CreatedOnUtc { get { return this._CreatedOnUtc; } set { this._CreatedOnUtc = value; } }
-        public string CreatedBy { get { return this._CreatedBy; } set { this._CreatedBy = value; } }
+        public int CreatedBy { get { return this._CreatedBy; } set { this._CreatedBy = value; } }
         public DateTime UpdatedOnUtc { get { return this._UpdatedOnUtc; } set { this._UpdatedOnUtc = value; } }
-        public string UpdatedBy { get { return this._UpdatedBy; } set { this._UpdatedBy = value; } }
-        public string IsActive { get { return this._IsActive; } set { this._IsActive = value; } }
+        public int UpdatedBy { get { return this._UpdatedBy; } set { this._UpdatedBy = value; } }
+        public bool IsActive { get { return this._IsActive; } set { this._IsActive = value; } }
     }
 }
