@@ -11,18 +11,18 @@ namespace WebTeam.Logics
         DAL oDAL;
         public int EmployeeRegister(Employee oEmployee)
         {
-            int id; oDAL = new DAL();
+            int id = 0; oDAL = new DAL();
             try
             {
-                id = oDAL.EmployeeRegister(oEmployee);
-                if (id > 0)
-                {
-
-                }
+                id = (oDAL.EmployeeRegister(oEmployee));
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                oDAL = null;
             }
             return id;
         }

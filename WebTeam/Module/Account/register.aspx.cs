@@ -27,7 +27,7 @@ namespace WebTeam.Module.Account
             oEmployee.Pwd = txtPwd.Text;
             oBAL = new BAL();
             int i = oBAL.EmployeeRegister(oEmployee);
-            if (i > 0) { }
+            if (i > 0) { oBAL = null; oEmployee = null; }
         }
     }
 }
